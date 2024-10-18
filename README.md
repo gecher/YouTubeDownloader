@@ -14,7 +14,7 @@ A simple WPF desktop application to download YouTube playlists as MP3 files.
 
 ## Download
 
-You can download the latest release of the application as a ZIP file from the [Releases](https://github.com/gecher/YourRepoName/releases) section of this repository.
+You can download the latest release of the application as a ZIP file from the [Releases](https://github.com/gecher/YouTubeDownloader/blob/master/YouTubeDownloader/Playlist%20Downloader.rar) section of this repository.
 
 ## Installation
 
