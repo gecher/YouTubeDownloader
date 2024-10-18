@@ -1,0 +1,53 @@
+﻿<Window x:Class="YouTubeDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="YouTube MP3 Downloader" Height="500" Width="550"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Background="WhiteSmoke" FontFamily="Segoe UI" FontSize="14">
+
+    <Grid Margin="10">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <!-- Title -->
+            <TextBlock Text="Getacher YouTube MP3 Downloader" FontWeight="Bold" 
+                       FontSize="24" Foreground="DarkSlateGray" 
+                       HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+            <!-- URL Input -->
+            <TextBlock Text="Enter YouTube Playlist/Mix URL:" FontWeight="Bold" Margin="0,0,0,5" />
+            <TextBox x:Name="txtPlaylistUrl" Width="450" Height="35" Padding="5" 
+                     BorderBrush="LightGray" Background="White" 
+                     FontSize="14" VerticalContentAlignment="Center"/>
+
+            <!-- Folder selection -->
+            <TextBlock Text="Choose Download Folder:" FontWeight="Bold" Margin="10,20,0,5" />
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBox x:Name="txtDownloadFolder" Width="350" Height="35" Padding="5" 
+                         IsReadOnly="True" Background="WhiteSmoke" BorderBrush="LightGray"
+                         FontSize="14" VerticalContentAlignment="Center"/>
+                <Button x:Name="btnBrowse" Content="Browse..." Width="90" Height="35" 
+                        Margin="10,0,0,0" Background="#FF2196F3" Foreground="White"
+                        FontWeight="Bold" FontSize="14" Click="btnBrowse_Click" />
+            </StackPanel>
+
+            <!-- Download Button -->
+            <Button x:Name="btnDownload" Content="Download MP3" Width="150" Height="40"
+                    Margin="0,30,0,0" HorizontalAlignment="Center" 
+                    Background="#FF4CAF50" Foreground="White" FontWeight="Bold" FontSize="16"
+                    Click="btnDownload_Click" />
+
+            <!-- Progress Bar -->
+            <ProgressBar x:Name="progressBar" Height="25" Margin="0,30,0,0" 
+                         Width="450" IsIndeterminate="False" Background="LightGray" />
+
+            <!-- Status Label -->
+            <TextBlock x:Name="lblStatus" Text="Status: Idle" FontWeight="Bold" 
+                       Foreground="DarkSlateGray" FontSize="16" Margin="0,10,0,0" 
+                       HorizontalAlignment="Center" />
+
+            <!-- Log Output -->
+            <ListBox x:Name="lstLog" Width="450" Height="150" Margin="0,10,0,0" 
+                     Background="WhiteSmoke" BorderBrush="LightGray" FontSize="12"/>
+        </StackPanel>
+    </Grid>
+</Window>
