@@ -1,6 +1,10 @@
 # YouTube Downloader
 
 A simple WPF desktop application to download YouTube playlists as MP3 files.
+![image](https://github.com/user-attachments/assets/8a53f5f4-0359-484b-bf66-8f40cf834564)
+![image](https://github.com/user-attachments/assets/56b1c48c-c460-4fea-9e54-56bf41882e61)
+
+
 
 ## Features
 
